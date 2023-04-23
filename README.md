@@ -1,41 +1,28 @@
-# applied-project
+About project:
+===============
 
-This template should help get you started developing with Vue 3 in Vite.
+This project is one poc(Proof of concept) where I create CI/CD with github actions to deploy application's serverless in environments: dev, staging and production.
 
-## Recommended IDE Setup
+The application flow:
+======================
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+- When send code to branch **develop** or approved pull request made to **develop** github actions run tests and after deploy application in development environmet.
+- After create pull request to branch **staging** and approved pull request made to **staging** github actions run tests and after deploy application in staging environment.
+- After create pull request to branch **master** and approved pull request made to **master** github actions run tests and after deploy application in production environment.
 
-## Customize configuration
+Requirements:
+==============
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+- Aws cli installed and configured with credentions needs to deploy application
+- Serverless framework installed
+- Node.js
+- Npm
 
-## Project Setup
+Instructions run poc locally:
+=============================
 
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
-npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Clone the project
+- Execute command **npm install** to install package needs to project running ok.
+- Create *.env* file based in *.env.example* file
+- Execute command: **npm test** to running tests
+- Execute command: **npm run start:dev** to running application locally.
