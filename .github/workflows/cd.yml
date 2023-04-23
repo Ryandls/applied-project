@@ -36,4 +36,4 @@ jobs:
         run: yarn test
 
       - name: Deploy
-        run: serverless deploy
+        run: yarn serverless deploy
