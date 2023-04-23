@@ -2,7 +2,7 @@
 
 const calculator = require("../services/calculator");
 
-module.exports.example = async (event) => {
+module.exports.example = async () => {
   return {
     statusCode: 200,
     body: JSON.stringify(

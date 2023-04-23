@@ -21,7 +21,7 @@ jobs:
         run: yarn install
 
       - name: ESLint
-        run: yarn run eslint
+        run: yarn run lint
 
       - name: Run all tests
         run: yarn test
