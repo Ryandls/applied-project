@@ -8,13 +8,15 @@
     "test": "jest ./tests/**/*.spec.js"
   },
   "keywords": [],
-  "author": "",
+  "author": "ryandls <bryandouglasxd@gmail.com>",
   "license": "ISC",
   "dependencies": {
+    "eslint": "^8.39.0",
     "serverless-dotenv-plugin": "^3.9.0",
     "serverless-offline": "^8.0.0"
   },
   "devDependencies": {
     "jest": "^27.0.6"
-  }
+  },
+  "repository": "git@github.com:Ryandls/applied-project.git"
 }
