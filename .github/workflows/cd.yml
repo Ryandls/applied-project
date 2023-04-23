@@ -28,7 +28,7 @@ jobs:
           aws-region: us-east-1
 
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --prefer-offline
+        run: yarn install 
 
       - name: ESLint
         run: yarn run lint
