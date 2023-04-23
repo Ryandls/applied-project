@@ -7,9 +7,7 @@ module.exports.example = async () => {
     statusCode: 200,
     body: JSON.stringify(
       {
-        name: 'teste',
-        message: 'Go Serverless v1.0! Your function executed successfully!',
-        resultCalculeted: calculator.sum(10, 10),
+        name: 'Projeto Aplicado IGTI - 2023',
       },
       null,
       2
