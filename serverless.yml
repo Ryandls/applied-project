@@ -1,6 +1,6 @@
-service: poc-ci-cd-serverless
+service: project-ci-cd-severless
 
-frameworkVersion: '2'
+frameworkVersion: '3.30.1'
 
 provider:
   name: aws
@@ -15,5 +15,5 @@ functions:
     handler: src/handlers/handler.example
     events:
       - httpApi:
-          path: example-test
+          path: example
           method: GET
