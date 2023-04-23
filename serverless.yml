@@ -15,5 +15,5 @@ functions:
     handler: src/handlers/handler.example
     events:
       - httpApi:
-          path: example
+          path: /example-test
           method: GET
