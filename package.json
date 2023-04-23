@@ -5,6 +5,7 @@
   "main": "handler.js",
   "scripts": {
     "start:dev": "sls offline start",
+    "deploy": "serverless deploy",
     "test": "jest ./tests/**/*.spec.js",
     "lint": "eslint ."
   },
