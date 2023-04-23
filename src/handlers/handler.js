@@ -1,6 +1,6 @@
 'use strict';
 
-const calculator = require("../services/calculator");
+//const calculator = require("../services/calculator");
 
 module.exports.example = async () => {
   return {
