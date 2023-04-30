@@ -6,6 +6,11 @@ provider:
   name: aws
   runtime: nodejs14.x
 
+package:
+  exclude:
+    - node_modules/**
+    - venv/**
+
 plugins:
   - serverless-offline
   - serverless-dotenv-plugin
