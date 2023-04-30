@@ -8,7 +8,6 @@ module.exports.example = async () => {
     body: JSON.stringify(
       {
         name: 'Projeto Aplicado IGTI - 2023',
-        sub_title: 'Testando sonar',
       },
       null,
       2
